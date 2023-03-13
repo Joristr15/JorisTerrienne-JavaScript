@@ -28,23 +28,22 @@ function play(event) {
         (choixJoueur === 'paper' && choixOrdinateur === 'rock')  ||
         (choixJoueur === 'scissors' && choixOrdinateur === 'paper')
     ){
-        document.getElementById('NbPartie').innerHTML = `Manche ${nbPartie} : GAGNE`;
         scoreJoueur++;
-        document.getElementById('j-score').innerHTML = `${scoreJoueur}`;
         nbPartie++
+        document.getElementById('j-score').innerHTML = `${scoreJoueur}`;
+        document.getElementById('NbPartie').innerHTML = `Manche ${nbPartie} : GAGNE`;
     }else {
         scoreOrdinateur++;
+        nbPartie++
         document.getElementById('NbPartie').innerHTML = `Manche ${nbPartie} : PERDU`;
         document.getElementById('o-score').innerHTML = `${scoreOrdinateur}`;
-        nbPartie++
-    }
 
+    }
+    console.log(scoreJoueur);
+    console.log(scoreOrdinateur);
     if (scoreJoueur == 3 || scoreOrdinateur == 3){
         if(scoreJoueur > scoreOrdinateur) {
             document.getElementById('NbPartie').innerHTML = "PARTIE TERMINE : VOUS AVEZ GAGNE";
-            var scoreJoueur = 0;
-            var scoreOrdinateur = 0;
-            var nbPartie = 1;
         }else {
             document.getElementById('NbPartie').innerHTML = "PARTIE TERMINE : VOUS AVEZ PERDU";
         }
