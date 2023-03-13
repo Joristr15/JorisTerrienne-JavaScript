@@ -1,0 +1,51 @@
+body{
+    background-color: rgb(7, 59, 77);
+  }
+  
+H1,#NbPartie{
+  color: aliceblue;
+  text-align: center;
+  font-size: 22px;
+}
+.Score{
+  width: 100%;
+}
+.OrdinateurScore{
+  margin-right: 33%;
+  float: right;
+  color: aliceblue;
+  text-align: center;
+ 
+}
+.JoueurScore{
+  margin-left: 33%;
+  float: left;
+  color: aliceblue;
+  text-align: center;
+ 
+}
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+
+}
+
+#rock,#paper,#scissors{
+  font-size: 22px;
+  color: aliceblue;
+  background-color:rgb(7, 59, 77);
+  border-color: aliceblue;
+}
+#rock:hover,#paper:hover,#scissors:hover{
+  font-size: 22px;
+  color: rgb(7, 59, 77);
+  background-color:aliceblue;
+  border-color: aliceblue;
+}
+
+#choix-ordinateur{
+  text-align: center;
+  color: aliceblue;
+  margin-top: 150px;
+}
