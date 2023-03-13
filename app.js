@@ -29,14 +29,14 @@ function play(event) {
         (choixJoueur === 'scissors' && choixOrdinateur === 'paper')
     ){
         scoreJoueur++;
-        nbPartie++
         document.getElementById('j-score').innerHTML = `${scoreJoueur}`;
         document.getElementById('NbPartie').innerHTML = `Manche ${nbPartie} : GAGNE`;
+        nbPartie++
     }else {
         scoreOrdinateur++;
-        nbPartie++
         document.getElementById('NbPartie').innerHTML = `Manche ${nbPartie} : PERDU`;
         document.getElementById('o-score').innerHTML = `${scoreOrdinateur}`;
+        nbPartie++
 
     }
     console.log(scoreJoueur);
